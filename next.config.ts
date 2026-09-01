@@ -8,7 +8,10 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: "frame-ancestors 'self' https://www.psychofolio.com https://psychofolio.com",
+            value: [
+              "frame-ancestors 'self' https://www.psychofolio.com https://psychofolio.com",
+              "connect-src 'self' blob:",
+            ].join("; "),
           },
         ],
       },

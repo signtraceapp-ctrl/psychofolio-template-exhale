@@ -1,17 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: oklch(0.72 0.11 70);
-  --color-primary-hover: oklch(0.66 0.12 70);
-  --color-primary-fg: oklch(0.99 0.005 70);
-  --color-accent: oklch(0.78 0.05 250);
-  --color-accent-hover: oklch(0.72 0.06 250);
-  --color-accent-fg: oklch(0.25 0.02 250);
-  --color-bg: oklch(0.95 0.012 250);
-  --color-bg-secondary: oklch(0.97 0.012 80);
-  --color-fg: oklch(0.38 0.025 260);
-  --color-fg-muted: oklch(0.52 0.02 260);
-  --color-border: oklch(0.86 0.01 250);
+  --font-sans: var(--font-sans), "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), "Quicksand", ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -19,15 +10,28 @@ html {
 }
 
 body {
-  font-family: var(--font-sans), "Inter", ui-sans-serif, system-ui, sans-serif;
-  background-color: var(--color-bg);
-  color: var(--color-fg);
+  font-family: var(--font-display);
+  color-scheme: light;
+  background: linear-gradient(180deg, #e9eef6 0%, #f4f0e9 40%, #f8f3ea 100%);
+  color: #3a4252;
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-display), "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-display);
 }
 
 ::selection {
-  background: oklch(0.72 0.11 70 / 0.2);
+  background: rgba(217, 154, 78, 0.25);
+}
+
+@keyframes exhale-breath {
+  0% { transform: scale(1); opacity: 0.55; }
+  28% { transform: scale(1.6); opacity: 1; }
+  57% { transform: scale(1.6); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.55; }
+}
+
+@keyframes exhale-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }
