@@ -1,0 +1,86 @@
+{
+  "site": {
+    "name": "Uzm. Psk. Deniz Ornek",
+    "title": "Uzman Klinik Psikolog",
+    "email": "ornek@psychofolio.com",
+    "address": "Istanbul, Turkiye",
+    "copyright": "Tum haklari saklidir."
+  },
+  "home": {
+    "badge": "EXHALE",
+    "headline": "Nefes al,",
+    "headlineAccent": "kendine yer ac",
+    "headlineSuffix": ".",
+    "description": "Kaygi, tukenmislik ve stres yonetiminde farkindalik temelli yaklasimlarla sizi destekliyorum. Birlikte, ic huzura giden yolu bulabilirsiniz.",
+    "cta": "Iletisime Gecin",
+    "cardTitle": "Nefes & Farkindalik",
+    "cardSubtitle": "Mindfulness Temelli Terapi",
+    "quote": "Gecmiste ya da gelecekte degil, su anda var olmak ozgurluktur.",
+    "quoteAuthor": "Thich Nhat Hanh"
+  },
+  "services": [
+    {
+      "title": "Kaygi ve Panik Terapisi",
+      "desc": "Yaygin kaygi bozuklugu, panik atak ve sosyal kaygi icin bilissel davranisci ve farkindalik temelli butunlesik yaklasim.",
+      "duration": "50 dk",
+      "method": "Yuzyuze / Cevrimici"
+    },
+    {
+      "title": "Tukenmislik ve Stres Yonetimi",
+      "desc": "Is ve yasam kaynaklari tukenmislige karsi farkindalilik pratikleri, sinir belirleme ve enerji yonetimi calismasi.",
+      "duration": "50 dk",
+      "method": "Yuzyuze / Cevrimici"
+    },
+    {
+      "title": "Mindfulness Temelli Terapi",
+      "desc": "An'a odaklanma, beden farkindalilik ve dusunceleri gozlemleme becerilerini gelistiren yapilandirilmis program.",
+      "duration": "50 dk",
+      "method": "Yuzyuze"
+    },
+    {
+      "title": "Bireysel Psikoterapi",
+      "desc": "Duygusal zorluklar, uyum surecleri ve kisisel gelisim icin butuncul terapi sureci.",
+      "duration": "50 dk",
+      "method": "Yuzyuze / Cevrimici"
+    }
+  ],
+  "about": {
+    "title": "Hakkimda",
+    "intro": "Kaygi, tukenmislik ve stres yonetimi alaninda calisan bir klinik psikolog olarak, danisanlarimin ic huzurlarini yeniden bulmalarina eslik ediyorum.",
+    "credentials": [
+      { "year": "\u2014", "title": "Lisans Egitimi", "detail": "Psikoloji alaninda lisans derecesi" },
+      { "year": "\u2014", "title": "Yuksek Lisans", "detail": "Klinik psikoloji alaninda uzmanlik" },
+      { "year": "\u2014", "title": "Mindfulness Egitimi", "detail": "Farkindalik temelli bilissel terapi (MBCT) ileri duzey egitim" }
+    ]
+  },
+  "approach": {
+    "title": "Terapi Yaklasimim",
+    "intro": "Terapide amacim, dusuncelerinizle ve duygularinizla daha saglikli bir iliski kurmaniza yardimci olmaktir. Nefes almaya yer acacak bir alan sunuyorum.",
+    "principles": [
+      { "title": "Farkindalik ve An'a Donus", "desc": "Gecmis kaygilarindan ve gelecek endiselerinden siyrillarak, su anki deneyiminize nazikce yonelmenizi destekliyorum." },
+      { "title": "Kabul ve Sefkat", "desc": "Kendinize karsi elestirici olmak yerine, ic deneyimlerinizi kabul ve sefkatle karsilamanizi tesvik ediyorum." },
+      { "title": "Bilimsel Temel", "desc": "Farkindalik temelli bilissel terapi (MBCT) ve kabul-karlilik terapisi (ACT) gibi kanita dayali yaklasimlari kullaniyorum." },
+      { "title": "Bireysel Uyum", "desc": "Her kisinin tempesuna, ihtiyaclarina ve yasam kosullarina uygun bir terapi plani olusturuyorum." }
+    ]
+  },
+  "articles": [
+    { "title": "Kaygi ile Baris Yapmak: Farkindalik Temelli Yaklasimlar", "category": "Kaygi", "readTime": "8 dk", "date": "Ornek tarih" },
+    { "title": "Tukenmislik Sendromu: Belirtiler ve Iyilesme Yollari", "category": "Tukenmislik", "readTime": "7 dk", "date": "Ornek tarih" },
+    { "title": "Nefes Egzersizleri: Panik Aninda Uygulanabilir Teknikler", "category": "Mindfulness", "readTime": "5 dk", "date": "Ornek tarih" },
+    { "title": "Dijital Detoks ve Zihinsel Saglik", "category": "Stres", "readTime": "6 dk", "date": "Ornek tarih" }
+  ],
+  "faq": [
+    { "q": "Mindfulness temelli terapi nedir?", "a": "Farkindalik temelli terapi, su anki deneyiminize yargilamadan dikkat etmeyi ogreten, bilimsel olarak etkinligi kanitlanmis bir yaklasimdir." },
+    { "q": "Kaygi bozuklugu tedavi edilebilir mi?", "a": "Kaygi bozukluklari, uygun terapi yaklasimi ile onemli olcude iyilestirilebilir. Terapi sureci bireysel ihtiyaclara gore sekillendirilir." },
+    { "q": "Cevrimici seans yuzyuze kadar etkili mi?", "a": "Arastirmalar, birçok durum icin cevrimici terapinin yuzyuze terapiyle benzer etkinlikte oldugunu gostermektedir." },
+    { "q": "Seans ucreti ne kadar?", "a": "Seans bilgisi icin iletisime gecin." }
+  ],
+  "contact": {
+    "title": "Iletisim",
+    "intro": "Nefes alacak bir alana ihtiyaciniz varsa, birlikte baslayabiliriz.",
+    "formName": "Adiniz",
+    "formEmail": "E-posta",
+    "formMessage": "Mesajiniz",
+    "formSubmit": "Gonder"
+  }
+}
