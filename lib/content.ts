@@ -6,7 +6,9 @@ export interface SiteContent {
     name: string;
     title: string;
     email: string;
+    phone?: string;
     address: string;
+    hours?: string;
     copyright: string;
   };
   home: {
@@ -26,6 +28,8 @@ export interface SiteContent {
     desc: string;
     duration: string;
     method: string;
+    alt?: string;
+    tag?: string;
   }[];
   about: {
     title: string;

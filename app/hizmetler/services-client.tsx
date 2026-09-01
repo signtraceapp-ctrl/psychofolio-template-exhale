@@ -10,17 +10,17 @@ const SUND = "#b97f35";
 const defaultAltitudes = [
   {
     alt: "2.000",
-    tag: "kaygi - panik - stres",
+    tag: "kaygı - panik - stres",
     bg: "linear-gradient(120deg,#f6ead8 0%,#fbf4e6 100%)",
   },
   {
     alt: "5.000",
-    tag: "is stresi - sinirlar - yenilenme",
+    tag: "iş stresi - sınırlar - yenilenme",
     bg: "linear-gradient(120deg,#e8eef7 0%,#f4f7fb 100%)",
   },
   {
     alt: "8.000",
-    tag: "kucuk grup - 6 hafta",
+    tag: "küçük grup - 6 hafta",
     bg: "linear-gradient(120deg,#ffffff 0%,#f2f6fc 100%)",
   },
 ];
@@ -49,16 +49,16 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
   return (
     <ExhaleShell
       scopeRef={scopeRef}
-      eyebrow="irtifa katmanlari"
-      title="yukseldikce"
+      eyebrow="irtifa katmanları"
+      title="yükseldikçe"
       accent="hafifler."
       siteName={c.site.name}
     >
       <section className="pb-32 pt-2">
         <div className="mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
           <p data-reveal className="max-w-md text-[15px] font-light leading-[2] text-[#5b6478]">
-            Her irtifa, ayri bir calisma alani. Kartlari <Sweep>yana kaydirarak</Sweep>{" "}
-            tirmanin, her katmanda hava biraz daha incelir.
+            Üç irtifa, üç ayrı çalışma alanı. Kartları <Sweep>yana kaydırarak</Sweep>{" "}
+            tırmanın, her katmanda hava biraz daha incelir.
           </p>
 
           {/* Horizontal altitude ruler + plane */}
@@ -72,13 +72,13 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
               }}
               aria-hidden="true"
             />
-            {services.slice(0, 3).map((_, i) => (
+            {services.slice(0, 3).map((s, i) => (
               <span
                 key={i}
                 className="absolute top-1/2 -translate-y-1/2 text-[11px] font-semibold lowercase text-[#b97f35]/70"
                 style={{ left: `${8 + i * 38}%` }}
               >
-                {defaultAltitudes[i]?.alt || String((i + 1) * 3000)} m
+                {s.alt || defaultAltitudes[i]?.alt || String((i + 1) * 3000)} m
               </span>
             ))}
             <span
@@ -100,6 +100,8 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
         >
           {services.map((s, i) => {
             const alt = defaultAltitudes[i];
+            const sAlt = s.alt || alt?.alt;
+            const sTag = s.tag || alt?.tag;
             return (
               <div
                 key={i}
@@ -112,12 +114,12 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
                   style={{ WebkitTextStroke: `1.2px ${SUND}33` }}
                   aria-hidden="true"
                 >
-                  {alt?.alt || String(i + 1)}
+                  {sAlt || String(i + 1)}
                 </span>
                 <CloudDrift density={2} opacity={0.55} />
                 <div className="relative">
                   <p className="text-xs font-semibold lowercase text-[#b97f35]/85">
-                    {alt ? `${alt.alt} metre ~ ${alt.tag}` : s.method}
+                    {sAlt && sTag ? `${sAlt} metre ~ ${sTag}` : s.method}
                   </p>
                   <h3 className="mt-2 text-2xl font-medium lowercase text-[#3a4252] md:text-3xl">
                     {s.title}
@@ -125,11 +127,8 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
                   <p className="mt-4 text-[14px] font-light leading-[2] text-[#5b6478]">
                     {s.desc}
                   </p>
-                  <p className="mt-2 text-xs font-light lowercase text-[#5b6478]/60">
-                    {s.duration} - {s.method}
-                  </p>
                   <p className="mt-5 text-sm font-semibold lowercase text-[#b97f35] opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    bu irtifaya tirman &rarr;
+                    bu irtifaya tırman &rarr;
                   </p>
                 </div>
               </div>
@@ -145,7 +144,7 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
             <p className="px-8 text-2xl font-medium lowercase leading-snug">
               zirvede
               <br />
-              goruselim mi?
+              görüşelim mi?
             </p>
             <a
               href="/iletisim"
@@ -158,7 +157,7 @@ export function ServicesClient({ content: c }: { content: SiteContent }) {
 
         <div className="mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
           <p data-reveal className="mt-4 text-sm font-light lowercase text-[#5b6478]/70">
-            tum irtifalara yerden baslanir, ilk gorusme bir tanismadir
+            tüm irtifalara yerden başlanır, ilk görüşme bir tanışmadır
           </p>
         </div>
       </section>

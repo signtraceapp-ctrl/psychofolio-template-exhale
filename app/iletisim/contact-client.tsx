@@ -35,7 +35,7 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
     "repeating-linear-gradient(180deg,transparent 0 33px,#7d98c422 33px 34px)";
 
   return (
-    <ExhaleShell scopeRef={scopeRef} eyebrow="iletisim" title="gokyuzune bir" accent="mektup birakin." siteName={c.site.name}>
+    <ExhaleShell scopeRef={scopeRef} eyebrow="iletişim" title="gökyüzüne bir" accent="mektup bırakın." siteName={c.site.name}>
       <section className="pb-32 pt-6">
         <div className="mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
           <div className="mx-auto grid max-w-4xl gap-12 md:grid-cols-[5fr_7fr]">
@@ -47,9 +47,9 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                   <p className="mt-5 text-base font-light leading-[2] text-[#3a4252]">
                     {c.contact.intro || (
                       <>
-                        Ilk adim cogu zaman en agiridir.{" "}
-                        <Sweep>Kisa bir not yeterli</Sweep> - en gec iki is gunu
-                        icinde donus yapilir.
+                        İlk adım çoğu zaman en ağırıdır.{" "}
+                        <Sweep>Kısa bir not yeterli</Sweep> - en geç iki iş günü
+                        içinde dönüş yapılır.
                       </>
                     )}
                   </p>
@@ -72,9 +72,9 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                 </div>
               </div>
               <p className="px-2 text-xs font-light leading-[1.9] text-[#5b6478]/70">
-                Acil bir kriz anindaysaniz lutfen 112&apos;yi arayin ya da en
-                yakin acil servise basvurun; bu form acil destek icin uygun
-                degildir.
+                Acil bir kriz anındaysanız lütfen 112&apos;yi arayın ya da en
+                yakın acil servise başvurun; bu form acil destek için uygun
+                değildir.
               </p>
             </div>
 
@@ -88,14 +88,14 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                   >
                     exhale
                     <br />
-                    postasi
+                    postası
                   </div>
                   <p className="mt-5 text-xl font-medium lowercase text-[#3a4252]">
-                    mektubunuz gokyuzunde.
+                    mektubunuz gökyüzünde.
                   </p>
                   <p className="mt-3 max-w-xs text-[13px] font-light leading-[1.9] text-[#5b6478]/90">
-                    En gec iki is gunu icinde size donus yapilacak. (Bu bir
-                    sablon onizlemesidir - mesaj gonderilmedi.)
+                    En geç iki iş günü içinde size dönüş yapılacak. (Bu bir
+                    şablon önizlemesidir - mesaj gönderilmedi.)
                   </p>
                 </div>
               ) : (
@@ -163,7 +163,7 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
                         className="rounded-full px-9 py-3.5 text-sm font-semibold lowercase text-white shadow-[0_10px_26px_rgba(217,154,78,0.4)] transition-transform duration-300 hover:-translate-y-0.5"
                         style={{ background: `linear-gradient(120deg,${SUN},#c8883b)` }}
                       >
-                        {c.contact.formSubmit || "mektubu ucur"} &#9992;
+                        {c.contact.formSubmit || "mektubu uçur"} &#9992;
                       </button>
                     </div>
                   </form>

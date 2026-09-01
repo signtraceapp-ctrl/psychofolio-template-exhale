@@ -25,30 +25,30 @@ if (typeof window !== "undefined") {
 
 const ascentPhases = [
   {
-    eyebrow: "yerden yukseklik: 0 m",
-    title: "omuzlarindaki yuk",
+    eyebrow: "yerden yükseklik: 0 m",
+    title: "omuzlarındaki yük",
     accent: "ne kadar eski?",
-    text: "Kaygi, tukenmislik, durmayan zihin... Hepsi asagida, sisin icinde daha agir gorunur.",
+    text: "Kaygı, tükenmişlik, durmayan zihin... Hepsi aşağıda, sisin içinde daha ağır görünür.",
   },
   {
-    eyebrow: "yukseliyorsunuz",
-    title: "birakmak",
+    eyebrow: "yükseliyorsunuz",
+    title: "bırakmak",
     accent: "bir beceridir.",
-    text: "Terapide tasimayi ogrenmeyiz, usulca birakmayi ogreniriz. Her seans, biraz daha hafiflemektir.",
+    text: "Terapide taşımayı öğrenmeyiz, usulca bırakmayı öğreniriz. Her seans, biraz daha hafiflemektir.",
   },
   {
-    eyebrow: "bulutlarin uzeri",
+    eyebrow: "bulutların üzeri",
     title: "nefes al.",
-    accent: "yukarisi hep buradaydi.",
-    text: "Firtina dinmeden de gunesi gormek mumkun. Kaygiyla iliskinizi birlikte degistirelim.",
+    accent: "yukarısı hep buradaydı.",
+    text: "Fırtına dinmeden de güneşi görmek mümkün. Kaygıyla ilişkinizi birlikte değiştirelim.",
     isFinal: true,
   },
 ];
 
 const floatServices = [
-  { t: "bireysel terapi", d: "Kaygi, panik ve stresle 50 dakikalik haftalik nefes alani.", alt: "2.000 m" },
-  { t: "tukenmislik calismasi", d: "Surekli 'acik' yasamaktan surdurulebilir bir ritme.", alt: "5.000 m" },
-  { t: "mindfulness atolyeleri", d: "Alti haftalik kucuk grup farkindalik programi.", alt: "8.000 m" },
+  { t: "bireysel terapi", d: "Kaygı, panik ve stresle 50 dakikalık haftalık nefes alanı.", alt: "2.000 m" },
+  { t: "tükenmişlik çalışması", d: "Sürekli 'açık' yaşamaktan sürdürülebilir bir ritme.", alt: "5.000 m" },
+  { t: "mindfulness atölyeleri", d: "Altı haftalık küçük grup farkındalık programı.", alt: "8.000 m" },
 ];
 
 /* Reveal hook */
@@ -236,7 +236,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
       <ExhaleHeader siteName={c.site.name} />
 
       {/* ASCENT -- pinned cloud-breakthrough journey */}
-      <section ref={sectionRef} className="relative" style={{ height: "340vh" }} aria-label="Bulutlarin uzerine yukselis">
+      <section ref={sectionRef} className="relative" style={{ height: "340vh" }} aria-label="Bulutların üzerine yükseliş">
         <div ref={pinRef} className="relative h-screen w-full overflow-hidden">
           <LazyCloudScene progressRef={progressRef} breathRef={breathRef} />
 
@@ -282,7 +282,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                           href="/hizmetler"
                           className="rounded-full bg-white/70 px-7 py-4 text-sm font-medium lowercase text-[#5b6478] shadow-[0_8px_20px_rgba(90,110,140,0.12)] transition-[transform,color] duration-300 hover:-translate-y-0.5 hover:text-[#3a4252]"
                         >
-                          terasi gez
+                          terası gez
                         </a>
                       </div>
                     )}
@@ -302,7 +302,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
             <button
               onClick={enableMic}
               className="group relative mx-auto flex h-16 w-16 items-center justify-center"
-              aria-label={micState === "on" ? "Mikrofonu kapat" : "Nefesinle etkilesimi baslat"}
+              aria-label={micState === "on" ? "Mikrofonu kapat" : "Nefesinle etkileşimi başlat"}
             >
               <span
                 ref={haloRef}
@@ -320,14 +320,14 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
             </button>
             <p className="mt-3 max-w-[240px] text-xs font-medium lowercase leading-relaxed text-[#5b6478]/75">
               {micState === "on"
-                ? "dinliyorum, mikrofona dogru ufle, bulutlar aralansin"
+                ? "dinliyorum, mikrofona doğru üfle, bulutlar aralansın"
                 : micState === "denied"
-                  ? "mikrofon yok, space tusunu basili tutup ufle"
-                  : "tikla: nefesinle bulutlari arala (ya da space'e bas)"}
+                  ? "mikrofon yok, space tuşunu basılı tutup üfle"
+                  : "tıkla: nefesinle bulutları arala (ya da space'e bas)"}
             </p>
             {micState === "on" && (
               <p className="mt-1 text-[10px] font-light lowercase text-[#5b6478]/50">
-                ses kaydedilmez; yalnizca nefes siddeti anlik islenir
+                ses kaydedilmez; yalnızca nefes şiddeti anlık işlenir
               </p>
             )}
           </div>
@@ -343,14 +343,14 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
           >
             <CloudDrift density={3} opacity={0.5} />
             <div className="relative">
-              <p className="text-sm font-medium lowercase text-[#b97f35]/85">~ kucuk bir rituel ~</p>
+              <p className="text-sm font-medium lowercase text-[#b97f35]/85">~ küçük bir ritüel ~</p>
               <h2 className="mt-3 text-3xl font-light lowercase tracking-tight text-[#3a4252] md:text-4xl">
-                yukunu <Sweep>buraya birak.</Sweep>
+                yükünü <Sweep>buraya bırak.</Sweep>
               </h2>
               <p className="mx-auto mt-4 max-w-md text-[15px] font-light leading-[2] text-[#5b6478]">
-                Bugun seni agirlastiran seyi yaz. Bir balona baglayip gokyuzune
-                birakalim. <strong className="font-semibold">Hicbir yere gonderilmez, kaydedilmez.</strong>{" "}
-                Soz ucar, sen hafiflersin.
+                Bugün seni ağırlaştıran şeyi yaz. Bir balona bağlayıp gökyüzüne
+                bırakalım. <strong className="font-semibold">Hiçbir yere gönderilmez, kaydedilmez.</strong>{" "}
+                Söz uçar, sen hafiflersin.
               </p>
 
               <form
@@ -366,7 +366,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                   value={burden}
                   onChange={(e) => setBurden(e.target.value)}
                   maxLength={80}
-                  placeholder="bugun beni agirlastiran sey..."
+                  placeholder="bugün beni ağırlaştıran şey..."
                   className="w-full rounded-full border border-[#3a4252]/12 bg-white/85 px-6 py-4 text-sm font-light text-[#3a4252] outline-none transition-[border-color,box-shadow] duration-300 placeholder:text-[#5b6478]/45 focus:border-[#d99a4e]/60 focus:ring-2 focus:ring-[#d99a4e]/15"
                   style={{ cursor: "auto" }}
                 />
@@ -376,13 +376,13 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                   className="shrink-0 rounded-full px-6 py-4 text-sm font-semibold lowercase text-white shadow-[0_10px_26px_rgba(217,154,78,0.4)] transition-[transform,opacity] duration-300 hover:-translate-y-0.5 disabled:opacity-40"
                   style={{ background: "linear-gradient(120deg,#d99a4e,#c8883b)" }}
                 >
-                  birak
+                  bırak
                 </button>
               </form>
 
               {released > 0 && !flying && (
                 <p className="mt-5 text-sm font-light lowercase text-[#5b6478]/75">
-                  bu soz artik gokyuzunun. {released > 1 ? `(${released} yuk birakildi)` : "istersen bir tane daha birakabilirsin."}
+                  bu söz artık gökyüzünün. {released > 1 ? `(${released} yük bırakıldı)` : "istersen bir tane daha bırakabilirsin."}
                 </p>
               )}
             </div>
@@ -418,9 +418,9 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
         <Container>
           <div className="relative mx-auto max-w-4xl">
             <div data-reveal className="text-center">
-              <p className="text-sm font-medium lowercase text-[#b97f35]/85">~ teras katalogu ~</p>
+              <p className="text-sm font-medium lowercase text-[#b97f35]/85">~ teras kataloğu ~</p>
               <h2 className="mt-4 text-3xl font-light lowercase tracking-tight text-[#3a4252] md:text-4xl">
-                uc irtifa, tek amac: <Sweep>hafiflemek.</Sweep>
+                üç irtifa, tek amaç: <Sweep>hafiflemek.</Sweep>
               </h2>
               <div className="mt-6">
                 <BreathWave />
@@ -467,14 +467,15 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
           >
             <CloudDrift density={3} opacity={0.5} />
             <div className="relative">
-              <p className="text-sm font-medium lowercase text-[#b97f35]/85">~ ilk adim ~</p>
+              <p className="text-sm font-medium lowercase text-[#b97f35]/85">~ ilk adım ~</p>
               <h2 className="mt-4 text-3xl font-light lowercase tracking-tight text-[#3a4252] md:text-4xl">
-                bugun tek yapmaniz gereken,
+                bugün tek yapmanız gereken,
                 <br />
                 <Sweep>bir nefes almak.</Sweep>
               </h2>
               <p className="mx-auto mt-5 max-w-md text-[15px] font-light leading-[2] text-[#5b6478]">
-                {c.contact.intro}
+                İlk görüşme bir tanışmadır: ihtiyacınızı birlikte anlar, size
+                uygun irtifayı birlikte seçeriz.
               </p>
               <a
                 href="/iletisim"
@@ -491,10 +492,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
       <footer className="py-12 text-center">
         <BreathWave w={90} />
         <p className="mt-4 text-xs font-medium lowercase text-[#3a4252]/40">
-          {c.site.name} - {c.site.title}
-        </p>
-        <p className="mt-1 text-[10px] font-light lowercase text-[#3a4252]/25">
-          &copy; {new Date().getFullYear()} {c.site.copyright}
+          exhale - nefes alan terapi
         </p>
       </footer>
     </div>

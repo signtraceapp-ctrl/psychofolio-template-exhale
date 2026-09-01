@@ -13,11 +13,11 @@ if (typeof window !== "undefined") {
 const SUND = "#b97f35";
 
 const defaultWaypoints = [
-  { year: "2013", title: "psikoloji lisansi", note: "Kayginin bedendeki dilini merak etmekle baslayan yolculuk." },
-  { year: "2016", title: "klinik psikoloji yuksek lisansi", note: "Bilissel ve kabul temelli yaklasimlar uzerine uzmanlasmak." },
-  { year: "2019", title: "mindfulness temelli terapi egitimi", note: "Uluslararasi sertifikasyon ve yogun uygulama donemi." },
-  { year: "2022", title: "ozel pratik: terasin acilisi", note: "Kaygi ve tukenmislik odakli kendi klinigi." },
-  { year: "2025", title: "nefes atolyeleri", note: "Kucuk gruplarla duzenli farkindalik ve nefes calismalari." },
+  { year: "2013", title: "psikoloji lisansı", note: "Kaygının bedendeki dilini merak etmekle başlayan yolculuk." },
+  { year: "2016", title: "klinik psikoloji yüksek lisansı", note: "Bilişsel ve kabul temelli yaklaşımlar üzerine uzmanlaşma." },
+  { year: "2019", title: "mindfulness temelli terapi eğitimi", note: "Uluslararası sertifikasyon ve yoğun uygulama dönemi." },
+  { year: "2022", title: "özel pratik: terasın açılışı", note: "Kaygı ve tükenmişlik odaklı kendi kliniği." },
+  { year: "2025", title: "nefes atölyeleri", note: "Küçük gruplarla düzenli farkındalık ve nefes çalışmaları." },
 ];
 
 export function AboutClient({ content: c }: { content: SiteContent }) {
@@ -54,9 +54,9 @@ export function AboutClient({ content: c }: { content: SiteContent }) {
   return (
     <ExhaleShell
       scopeRef={scopeRef}
-      eyebrow="ucus guncesi"
-      title="buraya nasil"
-      accent="yukseldim?"
+      eyebrow="uçuş güncesi"
+      title="buraya nasıl"
+      accent="yükseldim?"
       siteName={c.site.name}
     >
       <section className="pb-20 pt-6">
@@ -67,10 +67,10 @@ export function AboutClient({ content: c }: { content: SiteContent }) {
           >
             {c.about.intro || (
               <>
-                On yili askin suredir kaygiyla, panikle ve tukenmislikle bogusan
-                insanlara ayni seyi soyluyorum:{" "}
-                <Sweep>gokyuzu kapanmaz, yalnizca bulutlanir.</Sweep> Benim isim,
-                birlikte o bulutlarin uzerine cikmayi ogrenmek.
+                On yılı aşkın süredir kaygıyla, panikle ve tükenmişlikle boğuşan
+                insanlara aynı şeyi söylüyorum:{" "}
+                <Sweep>gökyüzü kapanmaz, yalnızca bulutlanır.</Sweep> Benim işim,
+                birlikte o bulutların üzerine çıkmayı öğrenmek.
               </>
             )}
           </p>

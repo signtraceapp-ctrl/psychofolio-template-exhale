@@ -1,142 +1,154 @@
 {
   "site": {
-    "name": "Ad Soyad",
-    "title": "Unvan",
-    "email": "iletisim@siteniz.com",
-    "address": "Sehir, Turkiye",
-    "copyright": "Tum haklari saklidir."
+    "name": "Exhale",
+    "title": "kaygı & mindfulness odaklı terapi",
+    "email": "teras@exhale.studio",
+    "phone": "+90 212 000 00 00",
+    "address": "Moda, İstanbul",
+    "hours": "hafta içi 09.30 - 18.30",
+    "copyright": "Tüm hakları saklıdır."
   },
   "home": {
     "badge": "EXHALE",
     "headline": "Nefes al,",
-    "headlineAccent": "kendine yer ac",
+    "headlineAccent": "kendine yer aç",
     "headlineSuffix": ".",
-    "description": "Kaygi, tukenmislik ve stres yonetiminde farkindalik temelli yaklasimlarla sizi destekliyorum. Birlikte, ic huzura giden yolu bulabilirsiniz.",
-    "cta": "Iletisime Gecin",
-    "cardTitle": "Nefes & Farkindalik",
+    "description": "Kaygı, tükenmişlik ve stres yönetiminde farkındalık temelli yaklaşımlarla sizi destekliyorum. Birlikte, iç huzura giden yolu bulabilirsiniz.",
+    "cta": "İletişime Geçin",
+    "cardTitle": "Nefes & Farkındalık",
     "cardSubtitle": "Mindfulness Temelli Terapi",
-    "quote": "Gecmiste ya da gelecekte degil, su anda var olmak ozgurluktur.",
-    "quoteAuthor": "Thich Nhat Hanh"
+    "quote": "bulutlar gökyüzü değildir. kaygı da siz değilsiniz, yalnızca içinden geçtiğiniz bir hava durumu.",
+    "quoteAuthor": "exhale yaklaşımı"
   },
   "services": [
     {
-      "title": "Kaygi ve Panik Terapisi",
-      "desc": "Yaygin kaygi bozuklugu, panik atak ve sosyal kaygi icin bilissel davranisci ve farkindalik temelli butunlesik yaklasim.",
+      "title": "bireysel terapi",
+      "desc": "Kaygının gündelik yükünü birlikte tanımak, tetikleyicileri haritalamak ve nefes alanı açmak. 50 dakikalık haftalık görüşmeler.",
       "duration": "50 dk",
-      "method": "Yuzyuze / Cevrimici"
+      "method": "Yüzyüze / Çevrimiçi",
+      "alt": "2.000",
+      "tag": "kaygı - panik - stres"
     },
     {
-      "title": "Tukenmislik ve Stres Yonetimi",
-      "desc": "Is ve yasam kaynaklari tukenmislige karsi farkindalilik pratikleri, sinir belirleme ve enerji yonetimi calismasi.",
+      "title": "tükenmişlik çalışması",
+      "desc": "Sürekli 'açık' yaşamanın bedeliyle yüzleşip sürdürülebilir bir ritim kurmak. Bireysel ya da kurumsal format.",
       "duration": "50 dk",
-      "method": "Yuzyuze / Cevrimici"
+      "method": "Yüzyüze / Çevrimiçi",
+      "alt": "5.000",
+      "tag": "iş stresi - sınırlar - yenilenme"
     },
     {
-      "title": "Mindfulness Temelli Terapi",
-      "desc": "An'a odaklanma, beden farkindalilik ve dusunceleri gozlemleme becerilerini gelistiren yapilandirilmis program.",
+      "title": "mindfulness atölyeleri",
+      "desc": "Altı haftalık yapılandırılmış farkındalık programı: oturmak, izlemek, nefes almak ve bunu hayata taşımak.",
       "duration": "50 dk",
-      "method": "Yuzyuze"
-    },
-    {
-      "title": "Bireysel Psikoterapi",
-      "desc": "Duygusal zorluklar, uyum surecleri ve kisisel gelisim icin butuncul terapi sureci.",
-      "duration": "50 dk",
-      "method": "Yuzyuze / Cevrimici"
+      "method": "Yüzyüze",
+      "alt": "8.000",
+      "tag": "küçük grup - 6 hafta"
     }
   ],
   "about": {
-    "title": "Hakkimda",
-    "intro": "Kaygi, tukenmislik ve stres yonetimi alaninda calisan bir klinik psikolog olarak, danisanlarimin ic huzurlarini yeniden bulmalarina eslik ediyorum.",
+    "title": "Hakkımda",
+    "intro": "",
     "credentials": [
       {
-        "year": "—",
-        "title": "Lisans Egitimi",
-        "detail": "Psikoloji alaninda lisans derecesi"
+        "year": "2013",
+        "title": "psikoloji lisansı",
+        "detail": "Kaygının bedendeki dilini merak etmekle başlayan yolculuk."
       },
       {
-        "year": "—",
-        "title": "Yuksek Lisans",
-        "detail": "Klinik psikoloji alaninda uzmanlik"
+        "year": "2016",
+        "title": "klinik psikoloji yüksek lisansı",
+        "detail": "Bilişsel ve kabul temelli yaklaşımlar üzerine uzmanlaşma."
       },
       {
-        "year": "—",
-        "title": "Mindfulness Egitimi",
-        "detail": "Farkindalik temelli bilissel terapi (MBCT) ileri duzey egitim"
+        "year": "2019",
+        "title": "mindfulness temelli terapi eğitimi",
+        "detail": "Uluslararası sertifikasyon ve yoğun uygulama dönemi."
+      },
+      {
+        "year": "2022",
+        "title": "özel pratik: terasın açılışı",
+        "detail": "Kaygı ve tükenmişlik odaklı kendi kliniği."
+      },
+      {
+        "year": "2025",
+        "title": "nefes atölyeleri",
+        "detail": "Küçük gruplarla düzenli farkındalık ve nefes çalışmaları."
       }
     ]
   },
   "approach": {
-    "title": "Terapi Yaklasimim",
-    "intro": "Terapide amacim, dusuncelerinizle ve duygularinizla daha saglikli bir iliski kurmaniza yardimci olmaktir. Nefes almaya yer acacak bir alan sunuyorum.",
+    "title": "Yaklaşımım",
+    "intro": "",
     "principles": [
       {
-        "title": "Farkindalik ve An'a Donus",
-        "desc": "Gecmis kaygilarindan ve gelecek endiselerinden siyrillarak, su anki deneyiminize nazikce yonelmenizi destekliyorum."
+        "title": "fark et",
+        "desc": "Önce olan biteni yargılamadan görmek: bedendeki gerginlik, zihindeki döngüler, kaçınılan duygular. Farkındalık, değişimin ilk yarısıdır."
       },
       {
-        "title": "Kabul ve Sefkat",
-        "desc": "Kendinize karsi elestirici olmak yerine, ic deneyimlerinizi kabul ve sefkatle karsilamanizi tesvik ediyorum."
+        "title": "birlikte kal",
+        "desc": "Rahatsız edici olanla, kaçmadan, bastırmadan, güvenli bir çerçevede kalmayı öğrenmek. Kaygı, tanık olundukça küçülür."
       },
       {
-        "title": "Bilimsel Temel",
-        "desc": "Farkindalik temelli bilissel terapi (MBCT) ve kabul-karlilik terapisi (ACT) gibi kanita dayali yaklasimlari kullaniyorum."
-      },
-      {
-        "title": "Bireysel Uyum",
-        "desc": "Her kisinin tempesuna, ihtiyaclarina ve yasam kosullarina uygun bir terapi plani olusturuyorum."
+        "title": "alan aç",
+        "desc": "İşe yaramayan stratejileri, katı öz-eleştiriyi ve taşınması gerekmeyen yükleri usulca bırakmak. Kalan şey: nefes alan bir hayat."
       }
     ]
   },
   "articles": [
     {
-      "title": "Kaygi ile Baris Yapmak: Farkindalik Temelli Yaklasimlar",
-      "category": "Kaygi",
-      "readTime": "8 dk",
-      "date": ""
+      "title": "panik bir alarm, yangın değil",
+      "category": "kaygı",
+      "readTime": "Panik atağın bedendeki hikayesi ve alarmı yeniden ayarlamak.",
+      "date": "haziran 2026"
     },
     {
-      "title": "Tukenmislik Sendromu: Belirtiler ve Iyilesme Yollari",
-      "category": "Tukenmislik",
-      "readTime": "7 dk",
-      "date": ""
+      "title": "sürekli açık yaşamanın bedeli",
+      "category": "tükenmişlik",
+      "readTime": "Tükenmişliğin erken sinyalleri ve sınır çizmenin incelikleri.",
+      "date": "mart 2026"
     },
     {
-      "title": "Nefes Egzersizleri: Panik Aninda Uygulanabilir Teknikler",
-      "category": "Mindfulness",
-      "readTime": "5 dk",
-      "date": ""
+      "title": "dört saniyelik devrim",
+      "category": "nefes",
+      "readTime": "Nefesin sinir sistemi üzerindeki ölçülebilir etkisi.",
+      "date": "aralık 2025"
     },
     {
-      "title": "Dijital Detoks ve Zihinsel Saglik",
-      "category": "Stres",
-      "readTime": "6 dk",
-      "date": ""
+      "title": "zihin hava durumudur",
+      "category": "farkındalık",
+      "readTime": "Düşünceleri bulut gibi izlemek: mindfulness'a giriş.",
+      "date": "eylül 2025"
     }
   ],
   "faq": [
     {
-      "q": "Mindfulness temelli terapi nedir?",
-      "a": "Farkindalik temelli terapi, su anki deneyiminize yargilamadan dikkat etmeyi ogreten, bilimsel olarak etkinligi kanitlanmis bir yaklasimdir."
+      "q": "terapiye başlamak için 'yeterince kötü' hissetmem mi gerekiyor?",
+      "a": "Hayır. Çoğu danışan tam da 'bu kadarcık şey için gelinir mi?' diye düşünürken gelir. Yük, ağırlaşmadan bırakılabilir. Erken başlamak çoğu zaman süreci kısaltır."
     },
     {
-      "q": "Kaygi bozuklugu tedavi edilebilir mi?",
-      "a": "Kaygi bozukluklari, uygun terapi yaklasimi ile onemli olcude iyilestirilebilir. Terapi sureci bireysel ihtiyaclara gore sekillendirilir."
+      "q": "kaygım tamamen geçer mi?",
+      "a": "Dürüst yanıt: kaygı, insan olmanın bir parçasıdır ve tamamen yok olmaz. Değişen şey, onunla ilişkinizdir. Sizi yöneten bir fırtınadan, fark edip geçmesine izin verdiğiniz bir buluta dönüşür."
     },
     {
-      "q": "Cevrimici seans yuzyuze kadar etkili mi?",
-      "a": "Arastirmalar, birçok durum icin cevrimici terapinin yuzyuze terapiyle benzer etkinlikte oldugunu gostermektedir."
+      "q": "seanslar nasıl ilerliyor?",
+      "a": "50 dakikalık haftalık görüşmelerle başlarız. İlk birkaç seans tanışma ve haritalama; sonrası, birlikte belirlediğimiz hedefler doğrultusunda düzenli çalışmadır."
     },
     {
-      "q": "Seans ucreti ne kadar?",
-      "a": "Seans bilgisi icin iletisime gecin."
+      "q": "nefes egzersizleri gerçekten işe yarıyor mu?",
+      "a": "Düzenli uygulandığında, yavaş nefesin sinir sistemini sakinleştirdiğine dair güçlü bilimsel bulgular var. Tek başına her şeyi çözmez; ama terapinin etkisini belirgin biçimde destekler."
+    },
+    {
+      "q": "çevrim içi görüşme mümkün mü?",
+      "a": "Evet. Görüşmelerin tamamı güvenli görüntülü bağlantıyla da yürütülebilir; atölyeler dönem dönem çevrim içi de açılır."
     }
   ],
   "contact": {
-    "title": "Iletisim",
-    "intro": "Nefes alacak bir alana ihtiyaciniz varsa, birlikte baslayabiliriz.",
-    "formName": "Adiniz",
-    "formEmail": "E-posta",
-    "formMessage": "Mesajiniz",
-    "formSubmit": "Gonder"
+    "title": "İletişim",
+    "intro": "",
+    "formName": "adım",
+    "formEmail": "e-postam",
+    "formMessage": "yazmak istediklerim...",
+    "formSubmit": "mektubu uçur"
   }
 }

@@ -221,10 +221,10 @@ export function BreathCursor() {
 /* Navigation: left vertical dock (desktop) + mini top bar (mobile) */
 const navLinks = [
   { label: "ana sayfa", path: "/" },
-  { label: "hakkinda", path: "/hakkimda" },
+  { label: "hakkında", path: "/hakkimda" },
   { label: "hizmetler", path: "/hizmetler" },
-  { label: "yaklasim", path: "/yaklasim" },
-  { label: "yazilar", path: "/yazilar" },
+  { label: "yaklaşım", path: "/yaklasim" },
+  { label: "makaleler", path: "/yazilar" },
   { label: "sss", path: "/sss" },
 ] as const;
 
@@ -243,7 +243,7 @@ export function ExhaleHeader({ siteName = "exhale" }: ExhaleHeaderProps) {
       {/* Desktop: left vertical dock */}
       <aside
         className="fixed left-5 top-1/2 z-40 hidden -translate-y-1/2 lg:block"
-        aria-label="Site menusu"
+        aria-label="Site menüsü"
       >
         <div className="flex w-40 flex-col gap-1 rounded-[2rem] bg-white/80 p-4 shadow-[0_24px_60px_rgba(90,110,140,0.20)] backdrop-blur-xl">
           {/* Wordmark */}
@@ -299,7 +299,7 @@ export function ExhaleHeader({ siteName = "exhale" }: ExhaleHeaderProps) {
         <button
           className="flex h-10 w-10 items-center justify-center rounded-full bg-white/80 shadow-sm"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label={menuOpen ? "Menuyu kapat" : "Menuyu ac"}
+          aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
           aria-expanded={menuOpen}
         >
           <span className="relative block h-3 w-4" aria-hidden="true">

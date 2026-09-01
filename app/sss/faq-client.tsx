@@ -82,8 +82,8 @@ export function FaqClient({ content: c }: { content: SiteContent }) {
               );
             })}
             <p data-reveal className="mt-6 text-center text-sm font-light lowercase text-[#5b6478]/75">
-              sorunuz burada yoksa - <Sweep>iletisim sayfasindan</Sweep> cekinmeden
-              yazin.
+              sorunuz burada yoksa - <Sweep>iletişim sayfasından</Sweep> çekinmeden
+              yazın.
             </p>
           </div>
         </div>

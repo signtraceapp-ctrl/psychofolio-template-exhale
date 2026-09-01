@@ -16,17 +16,17 @@ const breathSteps = [
   {
     phase: "nefes al",
     dur: "fark et",
-    text: "Once olan biteni yargilamadan gormek: bedendeki gerginlik, zihindeki donguler, kacinilan duygular. Farkindalik, degisimin ilk yarisidir.",
+    text: "Önce olan biteni yargılamadan görmek: bedendeki gerginlik, zihindeki döngüler, kaçınılan duygular. Farkındalık, değişimin ilk yarısıdır.",
   },
   {
     phase: "tut",
     dur: "birlikte kal",
-    text: "Rahatsiz edici olanla, kacmadan, bastirmadan, guvenli bir cercevede kalmayi ogrenmek. Kaygi, tanik olundukca kuculur.",
+    text: "Rahatsız edici olanla, kaçmadan, bastırmadan, güvenli bir çerçevede kalmayı öğrenmek. Kaygı, tanık olundukça küçülür.",
   },
   {
-    phase: "birak",
-    dur: "alan ac",
-    text: "Ise yaramayan stratejileri, kati oz-elestiriyi ve tasinmasi gerekmeyen yukleri usulca birakmak. Kalan sey: nefes alan bir hayat.",
+    phase: "bırak",
+    dur: "alan aç",
+    text: "İşe yaramayan stratejileri, katı öz-eleştiriyi ve taşınması gerekmeyen yükleri usulca bırakmak. Kalan şey: nefes alan bir hayat.",
   },
 ];
 
@@ -66,7 +66,7 @@ export function ApproachClient({ content: c }: { content: SiteContent }) {
     : breathSteps;
 
   return (
-    <ExhaleShell scopeRef={scopeRef} eyebrow="yontem" title="al. tut." accent="birak." siteName={c.site.name}>
+    <ExhaleShell scopeRef={scopeRef} eyebrow="yöntem" title="al. tut." accent="bırak." siteName={c.site.name}>
       <section className="pb-14 pt-4">
         <div className="mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
           <p
@@ -75,9 +75,9 @@ export function ApproachClient({ content: c }: { content: SiteContent }) {
           >
             {c.approach.intro || (
               <>
-                Yaklasimim bilissel-davranisci temeller ile kabul ve kararlilik
-                terapisini, nefes ve beden farkindaligi ile birlestirir. Amac kaygiyi
-                yok etmek degil, <Sweep>onunla iliskiyi degistirmektir.</Sweep>
+                Yaklaşımım bilişsel-davranışçı temeller ile kabul ve kararlılık
+                terapisini, nefes ve beden farkındalığıyla birleştirir. Amaç kaygıyı
+                yok etmek değil, <Sweep>onunla ilişkiyi değiştirmektir.</Sweep>
               </>
             )}
           </p>
@@ -119,7 +119,7 @@ export function ApproachClient({ content: c }: { content: SiteContent }) {
                   </div>
                 </div>
                 <p className="text-xs font-medium lowercase text-[#5b6478]/55">
-                  {active + 1} / 3 ~ nefes dongusu
+                  {active + 1} / 3 ~ nefes döngüsü
                 </p>
               </div>
             </div>

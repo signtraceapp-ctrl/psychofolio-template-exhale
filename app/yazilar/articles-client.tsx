@@ -13,7 +13,7 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
   const [featured, ...rest] = articles;
 
   return (
-    <ExhaleShell scopeRef={scopeRef} eyebrow="hava postasi" title="gokyuzunden" accent="mektuplar." siteName={c.site.name}>
+    <ExhaleShell scopeRef={scopeRef} eyebrow="hava postası" title="gökyüzünden" accent="mektuplar." siteName={c.site.name}>
       {featured && (
         <section className="pb-16 pt-6">
           <div className="mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
@@ -32,7 +32,7 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
                     aria-hidden="true"
                   />
                   <p className="text-sm font-semibold lowercase text-[#b97f35]/85">
-                    ~ one cikan - {featured.category} {featured.date ? `- ${featured.date}` : ""}
+                    ~ öne çıkan - {featured.category} {featured.date ? `- ${featured.date}` : ""}
                   </p>
                   <h2 className="mt-5 max-w-md text-2xl font-medium lowercase leading-[1.3] text-[#3a4252] transition-colors duration-500 group-hover:text-[#b97f35] sm:text-3xl md:text-4xl">
                     {featured.title}
@@ -41,7 +41,7 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
                     {featured.readTime}
                   </p>
                   <p className="mt-7 text-sm font-semibold lowercase text-[#b97f35]">
-                    mektubu ac &rarr;
+                    mektubu aç &rarr;
                   </p>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export function ArticlesClient({ content: c }: { content: SiteContent }) {
             data-reveal
             className="mt-14 text-center text-sm font-light lowercase text-[#5b6478]/70"
           >
-            yeni mektuplar her mevsim gokyuzune birakilir
+            yeni mektuplar her mevsim gökyüzüne bırakılır
           </p>
         </div>
       </section>
