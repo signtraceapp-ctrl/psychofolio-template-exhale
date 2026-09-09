@@ -224,7 +224,6 @@ const navLinks = [
   { label: "hakkında", path: "/hakkimda" },
   { label: "hizmetler", path: "/hizmetler" },
   { label: "yaklaşım", path: "/yaklasim" },
-  { label: "makaleler", path: "/yazilar" },
   { label: "sss", path: "/sss" },
 ] as const;
 
