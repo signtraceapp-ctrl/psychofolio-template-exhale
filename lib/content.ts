@@ -1,6 +1,18 @@
 import { readFileSync } from "fs";
 import { join } from "path";
 
+export interface SeoData {
+  jobTitle: string;
+  description: string;
+  specialties: string[];
+  credentials: string[];
+  location: string;
+  socialLinks: string[];
+  alumniOf?: string[];
+  openingHours?: string;
+  siteUrl?: string;
+}
+
 export interface SiteContent {
   site: {
     name: string;
@@ -56,6 +68,7 @@ export interface SiteContent {
     formMessage: string;
     formSubmit: string;
   };
+  seo?: SeoData;
 }
 
 let cached: SiteContent | null = null;
