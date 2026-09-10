@@ -4,17 +4,7 @@ type JsonLdObject = Record<string, unknown>;
 
 export function generateJsonLd(): JsonLdObject[] {
   const c = getContent();
-  const seo = (c as Record<string, unknown>).seo as {
-    jobTitle?: string;
-    description?: string;
-    specialties?: string[];
-    credentials?: string[];
-    location?: string;
-    siteUrl?: string;
-    socialLinks?: string[];
-    alumniOf?: string[];
-    openingHours?: string;
-  } | undefined;
+  const seo = c.seo;
   if (!seo) return [];
 
   const siteUrl = seo.siteUrl || "";
@@ -27,6 +17,7 @@ export function generateJsonLd(): JsonLdObject[] {
     description: seo.description,
     ...(siteUrl && { url: siteUrl }),
     ...(c.site.email && { email: `mailto:${c.site.email}` }),
+    ...(c.site.phone && { telephone: c.site.phone }),
     ...(seo.location && {
       address: {
         "@type": "PostalAddress",
@@ -34,8 +25,8 @@ export function generateJsonLd(): JsonLdObject[] {
         addressCountry: "TR",
       },
     }),
-    ...(seo.specialties && seo.specialties.length > 0 && { knowsAbout: seo.specialties }),
-    ...(seo.credentials && seo.credentials.length > 0 && {
+    ...(seo.specialties.length > 0 && { knowsAbout: seo.specialties }),
+    ...(seo.credentials.length > 0 && {
       hasCredential: seo.credentials.map((cr) => ({
         "@type": "EducationalOccupationalCredential",
         credentialCategory: cr,
@@ -55,10 +46,11 @@ export function generateJsonLd(): JsonLdObject[] {
   const service: JsonLdObject = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: `${c.site.name} - ${seo.jobTitle || "Psikolog"}`,
+    name: `${c.site.name} - ${seo.jobTitle}`,
     description: seo.description,
     ...(siteUrl && { url: siteUrl }),
     ...(c.site.email && { email: c.site.email }),
+    ...(c.site.phone && { telephone: c.site.phone }),
     ...(c.site.address && {
       address: {
         "@type": "PostalAddress",
@@ -69,7 +61,7 @@ export function generateJsonLd(): JsonLdObject[] {
     }),
     ...(seo.openingHours && { openingHours: seo.openingHours }),
     provider: person,
-    ...(c.services && c.services.length > 0 && {
+    ...(c.services.length > 0 && {
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Terapi Hizmetleri",
@@ -86,7 +78,7 @@ export function generateJsonLd(): JsonLdObject[] {
   };
   schemas.push(service);
 
-  if (c.faq && c.faq.length > 0) {
+  if (c.faq.length > 0) {
     schemas.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -105,7 +97,7 @@ export function generateJsonLd(): JsonLdObject[] {
     schemas.push({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: `${c.site.name} - ${seo.jobTitle || "Psikolog"}`,
+      name: `${c.site.name} - ${seo.jobTitle}`,
       url: siteUrl,
     });
   }
