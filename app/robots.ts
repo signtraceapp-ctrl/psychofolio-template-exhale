@@ -3,8 +3,7 @@ import { getContent } from "@/lib/content";
 
 export default function robots(): MetadataRoute.Robots {
   const c = getContent();
-  const seo = (c as Record<string, unknown>).seo as { siteUrl?: string } | undefined;
-  const baseUrl = seo?.siteUrl || "";
+  const baseUrl = c.seo?.siteUrl || "";
 
   return {
     rules: [
