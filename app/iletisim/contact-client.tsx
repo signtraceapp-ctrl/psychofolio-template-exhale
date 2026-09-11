@@ -12,8 +12,18 @@ export function ContactClient({ content: c }: { content: SiteContent }) {
   const [sent, setSent] = useState(false);
   const letterRef = useRef<HTMLDivElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const form = e.currentTarget;
+    const ad = (form.elements.namedItem("x-ad") as HTMLInputElement)?.value ?? "";
+    const eposta = (form.elements.namedItem("x-eposta") as HTMLInputElement)?.value ?? "";
+    const mesaj = (form.elements.namedItem("x-mesaj") as HTMLTextAreaElement)?.value ?? "";
+
+    const subject = `${ad} - İletişim Formu`;
+    const body = `Ad: ${ad}\nE-posta: ${eposta}\n\n${mesaj}`;
+    window.location.href = `mailto:${c.site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     const letter = letterRef.current;
     if (letter) {
       gsap.to(letter, {
