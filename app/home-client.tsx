@@ -45,7 +45,7 @@ const ascentPhases = [
   },
 ];
 
-const floatServices = [
+const defaultFloatServices = [
   { t: "bireysel terapi", d: "Kaygı, panik ve stresle 50 dakikalık haftalık nefes alanı.", alt: "2.000 m" },
   { t: "tükenmişlik çalışması", d: "Sürekli 'açık' yaşamaktan sürdürülebilir bir ritme.", alt: "5.000 m" },
   { t: "mindfulness atölyeleri", d: "Altı haftalık küçük grup farkındalık programı.", alt: "8.000 m" },
@@ -427,7 +427,10 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
               </div>
             </div>
             <div className="mt-14 grid gap-8 md:grid-cols-3">
-              {floatServices.map((s, i) => (
+              {(c.services.length > 0
+                ? c.services.map((sv, j) => ({ t: sv.title, d: sv.desc, alt: sv.alt || defaultFloatServices[j]?.alt || "" }))
+                : defaultFloatServices
+              ).map((s, i) => (
                 <div
                   key={s.t}
                   data-reveal
