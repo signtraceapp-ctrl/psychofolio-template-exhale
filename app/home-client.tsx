@@ -276,7 +276,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
                           className="rounded-full px-10 py-4 text-sm font-semibold lowercase text-white shadow-[0_12px_30px_rgba(217,154,78,0.4)] transition-transform duration-300 hover:-translate-y-0.5"
                           style={{ background: "linear-gradient(120deg,#d99a4e,#c8883b)" }}
                         >
-                          nefes randevusu al
+                          {c.home.cta || "nefes randevusu al"}
                         </a>
                         <a
                           href="/hizmetler"
@@ -495,7 +495,7 @@ export function HomeClient({ content: c }: { content: SiteContent }) {
       <footer className="py-12 text-center">
         <BreathWave w={90} />
         <p className="mt-4 text-xs font-medium lowercase text-[#3a4252]/40">
-          exhale - nefes alan terapi
+          {c.site.name} - {c.site.title}
         </p>
       </footer>
     </div>
